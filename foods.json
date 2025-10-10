@@ -106,8 +106,8 @@
     "text": "Lassi is a cold yogurt drink blended with sugar, salt, or fruits like mango.",
     "region": "Punjab",
     "type": "Drink"
-  }, 
-   {
+  },
+  {
     "id": "19",
     "text": "Momo is a type of South Asian dumpling popular in Nepal, filled with meat or vegetables and served with spicy chutney.",
     "region": "Nepal",
@@ -190,8 +190,8 @@
     "text": "Halo-halo is a Filipino dessert made from crushed ice, evaporated milk, and mixed ingredients like sweet beans, fruits, and jellies.",
     "region": "Philippines",
     "type": "Dessert"
-  }, 
-    {
+  },
+  {
     "id": "33",
     "text": "Peking duck is a famous Beijing dish featuring crispy roasted duck served with pancakes, hoisin sauce, and scallions.",
     "region": "China",
@@ -238,215 +238,410 @@
     "text": "Mooncake is a traditional Chinese pastry filled with lotus seed paste or red bean, eaten during the Mid-Autumn Festival.",
     "region": "China",
     "type": "Dessert"
-  }, 
+  },
   {
-  "id": "41",
-  "text": "Kimchi is a traditional Korean side dish made from fermented vegetables, usually cabbage and radish, with chili pepper and garlic.",
-  "region": "Korea",
-  "type": "Side Dish"
-},
-{
-  "id": "42",
-  "text": "Bibimbap is a Korean mixed rice dish topped with sautéed vegetables, sliced meat, a fried egg, and chili paste.",
-  "region": "Korea",
-  "type": "Main Course"
-},
-{
-  "id": "43",
-  "text": "Tteokbokki is a popular Korean street food made of chewy rice cakes in a spicy red sauce.",
-  "region": "Korea",
-  "type": "Snack"
-}, 
-{
-  "id": "44",
-  "text": "Beef noodle soup is a beloved Taiwanese dish made with braised beef, vegetables, and noodles in a flavorful broth.",
-  "region": "Taiwan",
-  "type": "Soup"
-},
-{
-  "id": "45",
-  "text": "Lu rou fan is a classic Taiwanese comfort food of minced pork belly cooked in soy sauce, served over rice.",
-  "region": "Taiwan",
-  "type": "Main Course"
-},
-{
-  "id": "46",
-  "text": "Bubble tea is a Taiwanese drink made with tea, milk, and chewy tapioca pearls.",
-  "region": "Taiwan",
-  "type": "Drink"
-}, 
-{
-  "id": "47",
-  "text": "Char siu is a Cantonese-style barbecued pork known for its sweet and savory glaze.",
-  "region": "Hong Kong",
-  "type": "Main Course"
-},
-{
-  "id": "48",
-  "text": "Egg tarts are a popular Hong Kong dessert consisting of a flaky pastry crust filled with egg custard.",
-  "region": "Hong Kong",
-  "type": "Dessert"
-},
-{
-  "id": "49",
-  "text": "Wonton noodles are a Hong Kong dish made with thin egg noodles and wontons in a clear broth.",
-  "region": "Hong Kong",
-  "type": "Noodle"
-}, 
-{
-  "id": "50",
-  "text": "Meat pie is an iconic Australian dish consisting of a flaky pastry filled with minced meat and gravy.",
-  "region": "Australia",
-  "type": "Snack"
-},
-{
-  "id": "51",
-  "text": "Lamingtons are sponge cakes coated in chocolate and rolled in coconut, a popular Australian dessert.",
-  "region": "Australia",
-  "type": "Dessert"
-} ,
-{
-  "id": "52",
-  "text": "Pavlova is a meringue-based dessert topped with fresh fruit and cream, considered a national dish of New Zealand.",
-  "region": "New Zealand",
-  "type": "Dessert"
-},
-{
-  "id": "53",
-  "text": "Hangi is a traditional Māori method of cooking meat and vegetables in an underground oven.",
-  "region": "New Zealand",
-  "type": "Main Course"
-},
-{
-  "id": "54",
-  "text": "Palusami is a Polynesian dish of taro leaves filled with coconut cream and sometimes meat, baked in banana leaves.",
-  "region": "Samoa, South Pacific",
-  "type": "Main Course"
-},
-{
-  "id": "55",
-  "text": "Oka is a Samoan raw fish salad marinated in citrus and coconut milk, similar to ceviche.",
-  "region": "Samoa, South Pacific",
-  "type": "Appetizer"
-},
-{
-  "id": "56",
-  "text": "Lovo is a Fijian feast where food is wrapped in banana leaves and cooked in an earth oven.",
-  "region": "Fiji, South Pacific",
-  "type": "Main Course"
-}
-,
-{
-  "id": "57",
-  "text": "Kokoda is a Fijian dish of raw fish marinated in lime juice and coconut milk, similar to ceviche.",
-  "region": "Fiji, South Pacific",
-  "type": "Appetizer"
-},
-{
-  "id": "58",
-  "text": "Poke is a Hawaiian dish of diced raw fish, typically seasoned with soy sauce and sesame oil.",
-  "region": "Hawaii, USA",
-  "type": "Appetizer"
-},
-{
-  "id": "59",
-  "text": "Spam musubi is a Hawaiian snack made of rice and Spam wrapped in seaweed.",
-  "region": "Hawaii, USA",
-  "type": "Snack"
-},
-{  "id": "60",
-  "text": "Loco moco is a Hawaiian dish consisting of rice topped with a hamburger patty, fried egg, and brown gravy.",
-  "region": "Hawaii, USA",
-  "type": "Main Course"
-},
-{
-  "id": "61",
-  "text": "Sushi is a Japanese dish of vinegared rice combined with seafood, vegetables, and sometimes tropical fruits.",
-  "region": "Japan",
-  "type": "Main Course"
-},
-{
-  "id": "62",
-  "text": "Ramen is a Japanese noodle soup dish with Chinese-style wheat noodles served in a meat or fish-based broth.",
-  "region": "Japan",
-  "type": "Main Course"
-},
-{
-  "id": "63",
-  "text": "Tempura is a Japanese dish of seafood or vegetables that have been battered and deep-fried.",
-  "region": "Japan",
-  "type": "Main Course"
-},
-{
-  "id": "64",
-  "text": "Miso soup is a traditional Japanese soup consisting of a stock called dashi into which softened miso paste is mixed.",
-  "region": "Japan",
-  "type": "Soup"
-},
-{
-  "id": "65",
-  "text": "Okonomiyaki is a savory Japanese pancake containing a variety of ingredients.",
-  "region": "Japan",
-  "type": "Main Course"
-},
-{
-  "id": "66",
-  "text": "Hummus is a Middle Eastern dip or spread made from cooked, mashed chickpeas blended with tahini, olive oil, lemon juice, and garlic.",
-  "region": "Middle East",
-  "type": "Appetizer"
-},
-{
-  "id": "67",
-  "text": "Falafel consists of deep-fried balls of ground chickpeas or fava beans, typically served in pita bread.",
-  "region": "Middle East",
-  "type": "Main Course"
-},
-{
-  "id": "68",
-  "text": "Shawarma is a Middle Eastern meat preparation where thin slices of lamb, chicken, or beef are stacked and roasted on a vertical rotisserie.",
-  "region": "Middle East",
-  "type": "Main Course"
-},
-{
-  "id": "69",
-  "text": "Tabbouleh is a Levantine vegetarian salad made of finely chopped parsley, tomatoes, mint, and bulgur.",
-  "region": "Middle East",
-  "type": "Salad"
-},
-{
-  "id": "70",
-  "text": "Baklava is a rich, sweet dessert pastry made of layers of filo filled with chopped nuts and sweetened with syrup or honey.",
-  "region": "Middle East",
-  "type": "Dessert"
-},
-{
-  "id": "71",
-  "text": "Buuz are Mongolian steamed dumplings filled with minced meat, typically mutton or beef.",
-  "region": "Mongolia",
-  "type": "Main Course"
-},
-{
-  "id": "72",
-  "text": "Khorkhog is a Mongolian barbecue dish where meat is cooked with hot stones inside a sealed container.",
-  "region": "Mongolia",
-  "type": "Main Course"
-},
-{
-  "id": "73",
-  "text": "Airag is a traditional Mongolian alcoholic drink made from fermented mare's milk.",
-  "region": "Mongolia",
-  "type": "Beverage"
-},
-{
-  "id": "74",
-  "text": "Boortsog are Mongolian deep-fried cookies often served with tea or used as a dessert.",
-  "region": "Mongolia",
-  "type": "Dessert"
-},
-{
-  "id": "75",
-  "text": "Suutei tsai is a traditional Mongolian milk tea made with green tea, milk, water, and salt.",
-  "region": "Mongolia",
-  "type": "Beverage"
-}
+    "id": "41",
+    "text": "Kimchi is a traditional Korean side dish made from fermented vegetables, usually cabbage and radish, with chili pepper and garlic.",
+    "region": "Korea",
+    "type": "Side Dish"
+  },
+  {
+    "id": "42",
+    "text": "Bibimbap is a Korean mixed rice dish topped with sautéed vegetables, sliced meat, a fried egg, and chili paste.",
+    "region": "Korea",
+    "type": "Main Course"
+  },
+  {
+    "id": "43",
+    "text": "Tteokbokki is a popular Korean street food made of chewy rice cakes in a spicy red sauce.",
+    "region": "Korea",
+    "type": "Snack"
+  },
+  {
+    "id": "44",
+    "text": "Beef noodle soup is a beloved Taiwanese dish made with braised beef, vegetables, and noodles in a flavorful broth.",
+    "region": "Taiwan",
+    "type": "Soup"
+  },
+  {
+    "id": "45",
+    "text": "Lu rou fan is a classic Taiwanese comfort food of minced pork belly cooked in soy sauce, served over rice.",
+    "region": "Taiwan",
+    "type": "Main Course"
+  },
+  {
+    "id": "46",
+    "text": "Bubble tea is a Taiwanese drink made with tea, milk, and chewy tapioca pearls.",
+    "region": "Taiwan",
+    "type": "Drink"
+  },
+  {
+    "id": "47",
+    "text": "Char siu is a Cantonese-style barbecued pork known for its sweet and savory glaze.",
+    "region": "Hong Kong",
+    "type": "Main Course"
+  },
+  {
+    "id": "48",
+    "text": "Egg tarts are a popular Hong Kong dessert consisting of a flaky pastry crust filled with egg custard.",
+    "region": "Hong Kong",
+    "type": "Dessert"
+  },
+  {
+    "id": "49",
+    "text": "Wonton noodles are a Hong Kong dish made with thin egg noodles and wontons in a clear broth.",
+    "region": "Hong Kong",
+    "type": "Noodle"
+  },
+  {
+    "id": "50",
+    "text": "Meat pie is an iconic Australian dish consisting of a flaky pastry filled with minced meat and gravy.",
+    "region": "Australia",
+    "type": "Snack"
+  },
+  {
+    "id": "51",
+    "text": "Lamingtons are sponge cakes coated in chocolate and rolled in coconut, a popular Australian dessert.",
+    "region": "Australia",
+    "type": "Dessert"
+  },
+  {
+    "id": "52",
+    "text": "Pavlova is a meringue-based dessert topped with fresh fruit and cream, considered a national dish of New Zealand.",
+    "region": "New Zealand",
+    "type": "Dessert"
+  },
+  {
+    "id": "53",
+    "text": "Hangi is a traditional Māori method of cooking meat and vegetables in an underground oven.",
+    "region": "New Zealand",
+    "type": "Main Course"
+  },
+  {
+    "id": "54",
+    "text": "Palusami is a Polynesian dish of taro leaves filled with coconut cream and sometimes meat, baked in banana leaves.",
+    "region": "Samoa, South Pacific",
+    "type": "Main Course"
+  },
+  {
+    "id": "55",
+    "text": "Oka is a Samoan raw fish salad marinated in citrus and coconut milk, similar to ceviche.",
+    "region": "Samoa, South Pacific",
+    "type": "Appetizer"
+  },
+  {
+    "id": "56",
+    "text": "Lovo is a Fijian feast where food is wrapped in banana leaves and cooked in an earth oven.",
+    "region": "Fiji, South Pacific",
+    "type": "Main Course"
+  },
+  {
+    "id": "57",
+    "text": "Kokoda is a Fijian dish of raw fish marinated in lime juice and coconut milk, similar to ceviche.",
+    "region": "Fiji, South Pacific",
+    "type": "Appetizer"
+  },
+  {
+    "id": "58",
+    "text": "Poke is a Hawaiian dish of diced raw fish, typically seasoned with soy sauce and sesame oil.",
+    "region": "Hawaii, USA",
+    "type": "Appetizer"
+  },
+  {
+    "id": "59",
+    "text": "Spam musubi is a Hawaiian snack made of rice and Spam wrapped in seaweed.",
+    "region": "Hawaii, USA",
+    "type": "Snack"
+  },
+  {
+    "id": "60",
+    "text": "Loco moco is a Hawaiian dish consisting of rice topped with a hamburger patty, fried egg, and brown gravy.",
+    "region": "Hawaii, USA",
+    "type": "Main Course"
+  },
+  {
+    "id": "61",
+    "text": "Sushi is a Japanese dish of vinegared rice combined with seafood, vegetables, and sometimes tropical fruits.",
+    "region": "Japan",
+    "type": "Main Course"
+  },
+  {
+    "id": "62",
+    "text": "Ramen is a Japanese noodle soup dish with Chinese-style wheat noodles served in a meat or fish-based broth.",
+    "region": "Japan",
+    "type": "Main Course"
+  },
+  {
+    "id": "63",
+    "text": "Tempura is a Japanese dish of seafood or vegetables that have been battered and deep-fried.",
+    "region": "Japan",
+    "type": "Main Course"
+  },
+  {
+    "id": "64",
+    "text": "Miso soup is a traditional Japanese soup consisting of a stock called dashi into which softened miso paste is mixed.",
+    "region": "Japan",
+    "type": "Soup"
+  },
+  {
+    "id": "65",
+    "text": "Okonomiyaki is a savory Japanese pancake containing a variety of ingredients.",
+    "region": "Japan",
+    "type": "Main Course"
+  },
+  {
+    "id": "66",
+    "text": "Hummus is a Middle Eastern dip or spread made from cooked, mashed chickpeas blended with tahini, olive oil, lemon juice, and garlic.",
+    "region": "Middle East",
+    "type": "Appetizer"
+  },
+  {
+    "id": "67",
+    "text": "Falafel consists of deep-fried balls of ground chickpeas or fava beans, typically served in pita bread.",
+    "region": "Middle East",
+    "type": "Main Course"
+  },
+  {
+    "id": "68",
+    "text": "Shawarma is a Middle Eastern meat preparation where thin slices of lamb, chicken, or beef are stacked and roasted on a vertical rotisserie.",
+    "region": "Middle East",
+    "type": "Main Course"
+  },
+  {
+    "id": "69",
+    "text": "Tabbouleh is a Levantine vegetarian salad made of finely chopped parsley, tomatoes, mint, and bulgur.",
+    "region": "Middle East",
+    "type": "Salad"
+  },
+  {
+    "id": "70",
+    "text": "Baklava is a rich, sweet dessert pastry made of layers of filo filled with chopped nuts and sweetened with syrup or honey.",
+    "region": "Middle East",
+    "type": "Dessert"
+  },
+  {
+    "id": "71",
+    "text": "Buuz are Mongolian steamed dumplings filled with minced meat, typically mutton or beef.",
+    "region": "Mongolia",
+    "type": "Main Course"
+  },
+  {
+    "id": "72",
+    "text": "Khorkhog is a Mongolian barbecue dish where meat is cooked with hot stones inside a sealed container.",
+    "region": "Mongolia",
+    "type": "Main Course"
+  },
+  {
+    "id": "73",
+    "text": "Airag is a traditional Mongolian alcoholic drink made from fermented mare's milk.",
+    "region": "Mongolia",
+    "type": "Beverage"
+  },
+  {
+    "id": "74",
+    "text": "Boortsog are Mongolian deep-fried cookies often served with tea or used as a dessert.",
+    "region": "Mongolia",
+    "type": "Dessert"
+  },
+  {
+    "id": "75",
+    "text": "Suutei tsai is a traditional Mongolian milk tea made with green tea, milk, water, and salt.",
+    "region": "Mongolia",
+    "type": "Beverage"
+  },
+  {
+    "id": "76",
+    "text": "Char Siu is a traditional Cantonese roasted pork dish with honey and soy glaze.",
+    "name": "Cantonese Char Siu",
+    "category": "Barbecue",
+    "origin": "Guangdong, China",
+    "description": "Char Siu is a traditional Cantonese roasted pork dish made from marinated pork loin coated with honey, soy sauce, fermented bean curd, and sugar. The meat is roasted until tender and caramelized, giving it a shiny red glaze and a slightly sweet aroma that represents the essence of Cantonese roast meats.",
+    "ingredients": ["pork loin", "honey", "soy sauce", "fermented bean curd", "sugar", "oyster sauce"],
+    "method": "Marinate pork for 6 hours, roast at 200°C for about 25 minutes while brushing honey glaze several times.",
+    "nutrition": "Rich in protein and energy; moderate fat content provides satiety. Best balanced with vegetables.",
+    "cultural_significance": "Char Siu is a symbol of Cantonese culinary culture and often served during family gatherings and festivals.",
+    "dietary_classification": ["non-vegetarian"]
+  },
+  {
+    "id": "77",
+    "text": "Hainanese Chicken Rice is tender poached chicken served with fragrant rice and chili sauce.",
+    "name": "Hainanese Chicken Rice",
+    "category": "Main Course",
+    "origin": "Hainan, China",
+    "description": "Hainanese Chicken Rice features tender poached chicken paired with fragrant rice cooked in chicken broth and fat. The chicken remains juicy and silky, while the rice carries the aroma of garlic and ginger. Served with chili sauce and soy dressing, it offers a delicate and comforting balance of flavors.",
+    "ingredients": ["chicken", "jasmine rice", "chicken broth", "ginger", "garlic", "soy sauce"],
+    "method": "Poach chicken slowly, cool in ice water, fry rice in chicken fat, then cook rice with chicken broth. Serve with chili and soy sauce.",
+    "nutrition": "High in lean protein and vitamin B complex; relatively low in fat when skin is removed.",
+    "cultural_significance": "Represents the light, balanced flavor style of southern Chinese cuisine and symbolizes home-style comfort.",
+    "dietary_classification": ["non-vegetarian", "gluten-free"]
+  },
+  {
+    "id": "78",
+    "text": "Mapo Tofu is a spicy Sichuan dish of tofu and minced beef in chili bean sauce.",
+    "name": "Mapo Tofu",
+    "category": "Hot Dish",
+    "origin": "Sichuan, China",
+    "description": "Mapo Tofu is a signature Sichuan dish combining soft tofu, minced beef, and spicy bean paste. Known for its 'mala' flavor (numbing and spicy), it delivers a bold and aromatic taste highlighted by Sichuan peppercorns. The silky tofu contrasts with the rich chili oil sauce, creating a unique texture.",
+    "ingredients": ["tofu", "ground beef", "doubanjiang", "Sichuan peppercorn", "garlic", "chili oil"],
+    "method": "Stir-fry minced beef with bean paste and peppercorns, add tofu cubes and simmer briefly in sauce.",
+    "nutrition": "High in plant protein and minerals; moderate spice aids metabolism and circulation.",
+    "cultural_significance": "Represents the bold, fiery spirit of Sichuan cuisine and the concept of harmony in contrasting flavors.",
+    "dietary_classification": ["non-vegetarian"]
+  },
+  {
+    "id": "79",
+    "text": "Kung Pao Chicken mixes diced chicken, peanuts, and chili in a sweet-spicy sauce.",
+    "name": "Kung Pao Chicken",
+    "category": "Stir-Fry",
+    "origin": "Sichuan, China",
+    "description": "Kung Pao Chicken combines diced chicken, peanuts, and dried chili peppers stir-fried in a savory-sweet sauce. The dish balances spiciness, sweetness, and nutty flavor, delivering both crunch and tenderness in each bite. It has become one of China's most recognized international dishes.",
+    "ingredients": ["chicken", "peanuts", "dried chili", "soy sauce", "vinegar", "sugar"],
+    "method": "Stir-fry chicken cubes, add dried chili and peanuts, then mix with soy-based sauce until thickened.",
+    "nutrition": "High in protein and healthy fats; contains antioxidants from chili and peanuts.",
+    "cultural_significance": "Named after an imperial official, it symbolizes harmony between flavors and balance in life.",
+    "dietary_classification": ["non-vegetarian", "gluten-free"]
+  },
+  {
+    "id": "80",
+    "text": "Peking Duck is a famous Beijing dish with crispy skin and tender meat.",
+    "name": "Beijing Peking Duck",
+    "category": "Roast",
+    "origin": "Beijing, China",
+    "description": "Peking Duck is a world-famous Chinese roast dish featuring crispy skin and tender meat. The duck is air-dried, glazed with maltose, and roasted to perfection. It is traditionally served with thin pancakes, cucumber, scallion, and sweet bean sauce for a balanced bite.",
+    "ingredients": ["duck", "maltose syrup", "cucumber", "scallion", "sweet bean sauce"],
+    "method": "Air-dry marinated duck, glaze with maltose syrup, and roast until golden brown and crisp.",
+    "nutrition": "High in protein and iron; duck fat offers healthy monounsaturated fats when consumed moderately.",
+    "cultural_significance": "Served at banquets and national events, representing Chinese culinary sophistication and hospitality.",
+    "dietary_classification": ["non-vegetarian"]
+  },
+  {
+    "id": "81",
+    "text": "Sweet and Sour Pork combines crispy pork with tangy sauce and pineapple.",
+    "name": "Sweet and Sour Pork",
+    "category": "Main Dish",
+    "origin": "Guangdong, China",
+    "description": "Sweet and Sour Pork features crispy fried pork coated with a tangy-sweet sauce made from vinegar, sugar, and ketchup. The sauce clings to the meat and pairs with bell peppers and pineapple for balance. It’s beloved for its vivid flavor and color.",
+    "ingredients": ["pork", "bell peppers", "pineapple", "vinegar", "ketchup", "sugar"],
+    "method": "Deep-fry pork cubes, stir-fry with vegetables, and toss in sweet-sour sauce until glossy.",
+    "nutrition": "High in protein and carbohydrates; moderate sugar intake recommended.",
+    "cultural_significance": "A symbol of happiness and prosperity due to its bright red color, often served at festive meals.",
+    "dietary_classification": ["non-vegetarian"]
+  },
+  {
+    "id": "82",
+    "text": "Xiaolongbao are steamed soup dumplings filled with pork and rich broth.",
+    "name": "Xiaolongbao (Soup Dumplings)",
+    "category": "Dim Sum",
+    "origin": "Shanghai, China",
+    "description": "Xiaolongbao are steamed soup dumplings filled with minced pork and rich broth encased in delicate dough. Each bite bursts with flavorful soup, offering a satisfying and elegant dining experience. The technique requires precise folding and temperature control.",
+    "ingredients": ["flour", "pork", "gelatin", "ginger", "soy sauce", "vinegar"],
+    "method": "Wrap pork and gelatin mixture in thin dough, steam until translucent, serve with vinegar sauce.",
+    "nutrition": "Rich in collagen and protein; moderate carb content from wrapper.",
+    "cultural_significance": "A symbol of craftsmanship and delicacy, representing Jiangnan’s refined culinary art.",
+    "dietary_classification": ["non-vegetarian"]
+  },
+  {
+    "id": "83",
+    "text": "Yangzhou Fried Rice mixes ham, shrimp, egg, and vegetables for color and flavor.",
+    "name": "Yangzhou Fried Rice",
+    "category": "Rice Dish",
+    "origin": "Jiangsu, China",
+    "description": "Yangzhou Fried Rice is a colorful stir-fried rice dish combining diced ham, shrimp, egg, and vegetables. Each grain of rice remains separate and fragrant. The dish emphasizes balance, harmony, and proper heat control in Chinese wok cooking.",
+    "ingredients": ["rice", "egg", "shrimp", "ham", "peas", "carrot"],
+    "method": "Stir-fry all ingredients on high heat to maintain rice separation and aroma.",
+    "nutrition": "High in carbohydrates and complete protein from shrimp and egg.",
+    "cultural_significance": "A classic banquet dish symbolizing abundance and unity.",
+    "dietary_classification": ["non-vegetarian", "gluten-free"]
+  },
+  {
+    "id": "84",
+    "text": "Hot Pot is a communal meal where diners cook meats and vegetables in broth.",
+    "name": "Hot Pot",
+    "category": "Communal Meal",
+    "origin": "Chongqing, China",
+    "description": "Hot Pot is a social dining tradition where diners cook thinly sliced meats, vegetables, and tofu in a simmering pot of broth at the table. The spicy Sichuan version features chili oil and peppercorns, creating a lively, shared experience around flavor and conversation.",
+    "ingredients": ["beef", "tofu", "mushroom", "chili oil", "broth", "vegetables"],
+    "method": "Boil broth, add ingredients, dip cooked items in sauce to eat.",
+    "nutrition": "Balanced meal providing protein, fiber, and essential minerals.",
+    "cultural_significance": "Symbolizes unity and warmth; popular in winter and family gatherings.",
+    "dietary_classification": ["non-vegetarian", "vegetarian options available"]
+  },
+  {
+    "id": "85",
+    "text": "Steamed Fish with Soy Sauce highlights the freshness of fish with light seasoning.",
+    "name": "Steamed Fish with Soy Sauce",
+    "category": "Seafood",
+    "origin": "Guangdong, China",
+    "description": "A classic Cantonese dish featuring whole fish steamed until tender, then topped with soy sauce, ginger, and scallion oil. The flavor is light and natural, highlighting the fish’s freshness rather than heavy seasoning.",
+    "ingredients": ["whole fish", "soy sauce", "ginger", "scallion", "oil"],
+    "method": "Steam fish for 8 minutes, pour hot oil and soy sauce mixture on top before serving.",
+    "nutrition": "Rich in omega-3 fatty acids, protein, and low in fat.",
+    "cultural_significance": "Served at Lunar New Year as fish symbolizes abundance ('nian nian you yu').",
+    "dietary_classification": ["non-vegetarian", "gluten-free"]
+  },
+  {
+    "id": "86",
+    "text": "Congee with Century Egg and Pork is a comforting rice porridge with rich flavor.",
+    "name": "Congee with Century Egg and Pork",
+    "category": "Breakfast",
+    "origin": "Southern China",
+    "description": "A comforting rice porridge made with preserved century eggs, minced pork, and ginger. Smooth and nourishing, it’s widely eaten for breakfast or when recovering from illness, offering both warmth and gentle nutrition.",
+    "ingredients": ["rice", "century egg", "pork", "ginger", "salt", "scallion"],
+    "method": "Boil rice into porridge, add pork and eggs, simmer until thick and fragrant.",
+    "nutrition": "Easily digestible carbohydrates, moderate protein, and electrolytes for recovery.",
+    "cultural_significance": "Represents comfort food in Chinese households; served to convey care and warmth.",
+    "dietary_classification": ["non-vegetarian", "gluten-free"]
+  },
+  {
+    "id": "87",
+    "text": "Stir-Fried Bok Choy with Garlic is a simple, light, and healthy vegetable dish.",
+    "name": "Stir-Fried Bok Choy with Garlic",
+    "category": "Vegetable Dish",
+    "origin": "Eastern China",
+    "description": "A simple yet flavorful vegetable dish featuring fresh bok choy stir-fried quickly with garlic and a touch of salt. It preserves the vegetable’s bright color and crisp texture while retaining nutrients. The dish highlights the Chinese philosophy of letting ingredients shine.",
+    "ingredients": ["bok choy", "garlic", "salt", "oil"],
+    "method": "Stir-fry garlic in oil, add bok choy, and cook for 2 minutes over high heat.",
+    "nutrition": "High in vitamins A and C, calcium, and dietary fiber.",
+    "cultural_significance": "A common side dish in Chinese meals representing simplicity and balance.",
+    "dietary_classification": ["vegetarian", "vegan", "gluten-free"]
+  },
+  {
+    "id": "88",
+    "text": "Mooncakes are traditional pastries eaten during the Mid-Autumn Festival.",
+    "name": "Mooncakes",
+    "category": "Dessert",
+    "origin": "China",
+    "description": "Mooncakes are traditional pastries eaten during the Mid-Autumn Festival. They have a dense filling such as lotus seed paste or red bean and may contain salted egg yolks. The round shape symbolizes unity and family reunion under the full moon.",
+    "ingredients": ["flour", "lotus seed paste", "egg yolk", "sugar", "oil"],
+    "method": "Wrap filling with dough, press into molds, and bake until golden brown.",
+    "nutrition": "High in carbohydrates and fat; best enjoyed in moderation.",
+    "cultural_significance": "Represents reunion and gratitude, central to the Mid-Autumn Festival celebration.",
+    "dietary_classification": ["vegetarian"]
+  },
+  {
+    "id": "89",
+    "text": "Zongzi are sticky rice dumplings wrapped in bamboo leaves for Dragon Boat Festival.",
+    "name": "Zongzi (Sticky Rice Dumpling)",
+    "category": "Festival Food",
+    "origin": "China",
+    "description": "Zongzi are glutinous rice dumplings wrapped in bamboo leaves, traditionally eaten during the Dragon Boat Festival. Fillings vary from savory pork to sweet red bean paste. The dish honors poet Qu Yuan and embodies themes of loyalty and remembrance.",
+    "ingredients": ["glutinous rice", "pork", "red bean", "bamboo leaves", "soy sauce"],
+    "method": "Wrap fillings in bamboo leaves with rice, tie tightly, and boil or steam for hours.",
+    "nutrition": "High in carbohydrates, provides slow-release energy and fiber when using whole grains.",
+    "cultural_significance": "Symbol of patriotism and family tradition during the Dragon Boat Festival.",
+    "dietary_classification": ["vegetarian", "non-vegetarian versions exist"]
+  },
+  {
+    "id": "90",
+    "text": "Beef Chow Fun is a Cantonese stir-fried noodle dish with beef and bean sprouts.",
+    "name": "Beef Chow Fun",
+    "category": "Noodle Dish",
+    "origin": "Guangdong, China",
+    "description": "Beef Chow Fun is a popular Cantonese stir-fried noodle dish made with flat rice noodles, tender beef slices, bean sprouts, and soy sauce. It features a smoky wok aroma known as 'wok hei' and balances savory and slightly sweet flavors perfectly.",
+    "ingredients": ["beef", "flat rice noodles", "bean sprouts", "soy sauce", "onion", "oil"],
+    "method": "Stir-fry beef until half-cooked, add noodles and sauce, toss quickly over high heat to develop wok aroma.",
+    "nutrition": "Provides carbohydrates, protein, and iron; moderate fat content when prepared with lean beef.",
+    "cultural_significance": "A staple of Cantonese street food culture, symbolizing simplicity and mastery of wok cooking.",
+    "dietary_classification": ["non-vegetarian", "gluten-free"]
+  }
 ]
