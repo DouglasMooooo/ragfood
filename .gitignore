@@ -1,2 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.build/
+.dist/
+*.log
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Coverage / Test
+.coverage
+.cache/
+.pytest_cache/
+htmlcov/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local databases and artifacts
+chroma_db/
+*.sqlite3
+
+# Environment files (keep example only)
+.env
+.env.*
+!.env.example
+
+# Node (if any subfolders)
+node_modules/
 chroma_db/
 .env 

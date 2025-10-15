@@ -144,3 +144,16 @@ Made by Callum using:
 * [mxbai-embed-large](https://ollama.com/library/mxbai-embed-large)
 * Indian food inspiration 🍛
 
+## Setup Groq Cloud Account
+
+Groq Cloud provides fast inference for large language models.  
+We'll replace the local Ollama instance with Groq's cloud-hosted `llama-3.1-8b-instant` model for better performance and reliability.
+
+### Setup Steps
+1. Visit [https://console.groq.com](https://console.groq.com) and create an account.
+2. Navigate to the **API Keys** section.
+3. Click **Create API Key** and assign it a descriptive name.
+4. Copy the API key immediately (you won’t see it again).
+5. Add the following to your `.env` file:
+   ```bash
+   GROQ_API_KEY="your_generated_key_here"

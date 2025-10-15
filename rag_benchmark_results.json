@@ -1,0 +1,885 @@
+{
+  "timing": {
+    "embedding": {
+      "avg_ms": 39.45,
+      "p95_ms": 62.42,
+      "min_ms": 8.37,
+      "max_ms": 62.42
+    },
+    "vector_query": {
+      "avg_ms": 253.74,
+      "p95_ms": 717.91,
+      "min_ms": 227.0,
+      "max_ms": 717.91
+    },
+    "llm": {
+      "avg_ms": 370.16,
+      "p95_ms": 507.94,
+      "min_ms": 272.86,
+      "max_ms": 507.94
+    },
+    "total": {
+      "avg_ms": 669.66,
+      "p95_ms": 1213.79,
+      "min_ms": 539.01,
+      "max_ms": 1213.79
+    }
+  },
+  "results": [
+    {
+      "query": "healthy Mediterranean options",
+      "embed_ms": 50.53,
+      "vector_ms": 717.91,
+      "llm_ms": 438.36,
+      "total_ms": 1213.79,
+      "top": [
+        {
+          "id": "69",
+          "score": 0.6761,
+          "region": "Middle East",
+          "type": "Salad",
+          "preview": "Tabbouleh is a Levantine vegetarian salad made of finely chopped parsley, tomatoes, mint, and bulgur."
+        },
+        {
+          "id": "55",
+          "score": 0.6587,
+          "region": "Samoa, South Pacific",
+          "type": "Appetizer",
+          "preview": "Oka is a Samoan raw fish salad marinated in citrus and coconut milk, similar to ceviche."
+        },
+        {
+          "id": "81",
+          "score": 0.6445,
+          "region": "",
+          "type": "",
+          "preview": "Sweet and Sour Pork combines crispy pork with tangy sauce and pineapple."
+        },
+        {
+          "id": "68",
+          "score": 0.6377,
+          "region": "Middle East",
+          "type": "Main Course",
+          "preview": "Shawarma is a Middle Eastern meat preparation where thin slices of lamb, chicken, or beef are stacked and roasted on a v"
+        },
+        {
+          "id": "76",
+          "score": 0.6368,
+          "region": "",
+          "type": "",
+          "preview": "Char Siu is a traditional Cantonese roasted pork dish with honey and soy glaze."
+        }
+      ],
+      "answer": "Tabbouleh is a healthy Mediterranean option, as it's a vegetarian salad made of finely chopped parsley, tomatoes, mint, and bulgur. The combination provides fiber, vitamins, and antioxidants in a light and refreshing dish."
+    },
+    {
+      "query": "Thai coconut curry dishes",
+      "embed_ms": 38.16,
+      "vector_ms": 227.0,
+      "llm_ms": 380.71,
+      "total_ms": 651.9,
+      "top": [
+        {
+          "id": "25",
+          "score": 0.8027,
+          "region": "Thailand",
+          "type": "Main Course",
+          "preview": "Pad Thai is a stir-fried noodle dish with shrimp, peanuts, and tamarind sauce, one of Thailand's national dishes."
+        },
+        {
+          "id": "24",
+          "score": 0.7514,
+          "region": "Pakistan",
+          "type": "Main Course",
+          "preview": "Chicken Karahi is a spicy curry cooked in a wok-like pan called a karahi, popular in Pakistan."
+        },
+        {
+          "id": "34",
+          "score": 0.7449,
+          "region": "China",
+          "type": "Main Course",
+          "preview": "Kung Pao chicken is a spicy stir-fry dish made with chicken, peanuts, vegetables, and chili peppers."
+        },
+        {
+          "id": "22",
+          "score": 0.7431,
+          "region": "Bangladesh",
+          "type": "Main Course",
+          "preview": "Bhuna khichuri is a spiced rice and lentil dish often served with beef curry in Bangladesh."
+        },
+        {
+          "id": "79",
+          "score": 0.7368,
+          "region": "",
+          "type": "",
+          "preview": "Kung Pao Chicken mixes diced chicken, peanuts, and chili in a sweet-spicy sauce."
+        }
+      ],
+      "answer": "There is not enough information in the given context to answer questions about Thai coconut curry dishes."
+    },
+    {
+      "query": "Ethiopian spicy chicken stew",
+      "embed_ms": 47.53,
+      "vector_ms": 227.3,
+      "llm_ms": 449.07,
+      "total_ms": 729.17,
+      "top": [
+        {
+          "id": "79",
+          "score": 0.777,
+          "region": "",
+          "type": "",
+          "preview": "Kung Pao Chicken mixes diced chicken, peanuts, and chili in a sweet-spicy sauce."
+        },
+        {
+          "id": "34",
+          "score": 0.7522,
+          "region": "China",
+          "type": "Main Course",
+          "preview": "Kung Pao chicken is a spicy stir-fry dish made with chicken, peanuts, vegetables, and chili peppers."
+        },
+        {
+          "id": "28",
+          "score": 0.7457,
+          "region": "Indonesia",
+          "type": "Main Course",
+          "preview": "Nasi Goreng is Indonesian-style fried rice often cooked with kecap manis, garlic, shallots, and chili."
+        },
+        {
+          "id": "12",
+          "score": 0.7257,
+          "region": "Punjab",
+          "type": "Main Course",
+          "preview": "Tandoori chicken is chicken marinated in yogurt and spices, roasted in a tandoor."
+        },
+        {
+          "id": "22",
+          "score": 0.7196,
+          "region": "Bangladesh",
+          "type": "Main Course",
+          "preview": "Bhuna khichuri is a spiced rice and lentil dish often served with beef curry in Bangladesh."
+        }
+      ],
+      "answer": "Information is missing in the provided context as no dish related to Ethiopia is mentioned. \n\nHowever, I can suggest a possible dish based on knowledge outside the given context: \"Doro Wot\" is a traditional Ethiopian spicy chicken stew that typically includes onions, garlic, ginger, and berbere spice."
+    },
+    {
+      "query": "Peruvian seafood appetizer with lime",
+      "embed_ms": 42.11,
+      "vector_ms": 228.85,
+      "llm_ms": 285.16,
+      "total_ms": 561.68,
+      "top": [
+        {
+          "id": "58",
+          "score": 0.7084,
+          "region": "Hawaii, USA",
+          "type": "Appetizer",
+          "preview": "Poke is a Hawaiian dish of diced raw fish, typically seasoned with soy sauce and sesame oil."
+        },
+        {
+          "id": "55",
+          "score": 0.7011,
+          "region": "Samoa, South Pacific",
+          "type": "Appetizer",
+          "preview": "Oka is a Samoan raw fish salad marinated in citrus and coconut milk, similar to ceviche."
+        },
+        {
+          "id": "56",
+          "score": 0.6878,
+          "region": "Fiji, South Pacific",
+          "type": "Main Course",
+          "preview": "Lovo is a Fijian feast where food is wrapped in banana leaves and cooked in an earth oven."
+        },
+        {
+          "id": "79",
+          "score": 0.68,
+          "region": "",
+          "type": "",
+          "preview": "Kung Pao Chicken mixes diced chicken, peanuts, and chili in a sweet-spicy sauce."
+        },
+        {
+          "id": "63",
+          "score": 0.6798,
+          "region": "Japan",
+          "type": "Main Course",
+          "preview": "Tempura is a Japanese dish of seafood or vegetables that have been battered and deep-fried."
+        }
+      ],
+      "answer": "The information about a Peruvian seafood appetizer with lime is not provided in the given context."
+    },
+    {
+      "query": "Greek baked eggplant casserole",
+      "embed_ms": 22.2,
+      "vector_ms": 227.66,
+      "llm_ms": 470.91,
+      "total_ms": 725.99,
+      "top": [
+        {
+          "id": "48",
+          "score": 0.7478,
+          "region": "Hong Kong",
+          "type": "Dessert",
+          "preview": "Egg tarts are a popular Hong Kong dessert consisting of a flaky pastry crust filled with egg custard."
+        },
+        {
+          "id": "86",
+          "score": 0.7398,
+          "region": "",
+          "type": "",
+          "preview": "Congee with Century Egg and Pork is a comforting rice porridge with rich flavor."
+        },
+        {
+          "id": "11",
+          "score": 0.6873,
+          "region": "North India",
+          "type": "Bread",
+          "preview": "Naan is a soft and fluffy flatbread that is traditionally baked in a tandoor."
+        },
+        {
+          "id": "40",
+          "score": 0.6821,
+          "region": "China",
+          "type": "Dessert",
+          "preview": "Mooncake is a traditional Chinese pastry filled with lotus seed paste or red bean, eaten during the Mid-Autumn Festival."
+        },
+        {
+          "id": "12",
+          "score": 0.6759,
+          "region": "Punjab",
+          "type": "Main Course",
+          "preview": "Tandoori chicken is chicken marinated in yogurt and spices, roasted in a tandoor."
+        }
+      ],
+      "answer": "This information is not in context. The context focuses on different desserts and cuisines in various parts of the world, but Greek baked eggplant casserole is missing from the provided context."
+    },
+    {
+      "query": "spicy vegetarian Asian dishes",
+      "embed_ms": 29.06,
+      "vector_ms": 228.17,
+      "llm_ms": 381.74,
+      "total_ms": 645.06,
+      "top": [
+        {
+          "id": "79",
+          "score": 0.7841,
+          "region": "",
+          "type": "",
+          "preview": "Kung Pao Chicken mixes diced chicken, peanuts, and chili in a sweet-spicy sauce."
+        },
+        {
+          "id": "34",
+          "score": 0.7664,
+          "region": "China",
+          "type": "Main Course",
+          "preview": "Kung Pao chicken is a spicy stir-fry dish made with chicken, peanuts, vegetables, and chili peppers."
+        },
+        {
+          "id": "25",
+          "score": 0.7647,
+          "region": "Thailand",
+          "type": "Main Course",
+          "preview": "Pad Thai is a stir-fried noodle dish with shrimp, peanuts, and tamarind sauce, one of Thailand's national dishes."
+        },
+        {
+          "id": "63",
+          "score": 0.7569,
+          "region": "Japan",
+          "type": "Main Course",
+          "preview": "Tempura is a Japanese dish of seafood or vegetables that have been battered and deep-fried."
+        },
+        {
+          "id": "41",
+          "score": 0.7564,
+          "region": "Korea",
+          "type": "Side Dish",
+          "preview": "Kimchi is a traditional Korean side dish made from fermented vegetables, usually cabbage and radish, with chili pepper a"
+        }
+      ],
+      "answer": "Based on the provided context, Kung Pao chicken (China) and Kimchi (Korea) could be suitable options, but Kung Pao chicken contains chicken. A more vegetarian option is mentioned to be part of the main ingredients in Kung Pao chicken (China), \"vegetables.\""
+    },
+    {
+      "query": "gluten-free vegan bowls high in fiber",
+      "embed_ms": 58.56,
+      "vector_ms": 229.07,
+      "llm_ms": 507.94,
+      "total_ms": 801.15,
+      "top": [
+        {
+          "id": "50",
+          "score": 0.6505,
+          "region": "Australia",
+          "type": "Snack",
+          "preview": "Meat pie is an iconic Australian dish consisting of a flaky pastry filled with minced meat and gravy."
+        },
+        {
+          "id": "67",
+          "score": 0.6478,
+          "region": "Middle East",
+          "type": "Main Course",
+          "preview": "Falafel consists of deep-fried balls of ground chickpeas or fava beans, typically served in pita bread."
+        },
+        {
+          "id": "69",
+          "score": 0.6353,
+          "region": "Middle East",
+          "type": "Salad",
+          "preview": "Tabbouleh is a Levantine vegetarian salad made of finely chopped parsley, tomatoes, mint, and bulgur."
+        },
+        {
+          "id": "45",
+          "score": 0.6322,
+          "region": "Taiwan",
+          "type": "Main Course",
+          "preview": "Lu rou fan is a classic Taiwanese comfort food of minced pork belly cooked in soy sauce, served over rice."
+        },
+        {
+          "id": "21",
+          "score": 0.6265,
+          "region": "Bangladesh",
+          "type": "Main Course",
+          "preview": "Hilsa curry is a traditional Bengali dish made with hilsa fish and mustard gravy."
+        }
+      ],
+      "answer": "Based on the given context, suitable options for gluten-free vegan bowls high in fiber are:\n\n- Tabbouleh from the Middle East, using finely chopped parsley, tomatoes, mint, and bulgur (gluten-free) with the bulgur providing good fiber content.\nHowever, since bulgur may contain gluten due to the possibility of barley, a possible replacement could be the chickpeas from Falafel.\n\nThe most suitable option might be made using the chickpeas from Falafel and combining them with vegetables and other fiber-rich ingredients, resulting in a gluten-free vegan bowl high in fiber."
+    },
+    {
+      "query": "low-sodium tofu stir-fry",
+      "embed_ms": 45.28,
+      "vector_ms": 229.63,
+      "llm_ms": 373.13,
+      "total_ms": 655.06,
+      "top": [
+        {
+          "id": "35",
+          "score": 0.7627,
+          "region": "Sichuan, China",
+          "type": "Main Course",
+          "preview": "Mapo tofu is a Sichuan dish featuring soft tofu in a spicy chili and bean-based sauce, typically with minced pork."
+        },
+        {
+          "id": "78",
+          "score": 0.7595,
+          "region": "",
+          "type": "",
+          "preview": "Mapo Tofu is a spicy Sichuan dish of tofu and minced beef in chili bean sauce."
+        },
+        {
+          "id": "38",
+          "score": 0.6847,
+          "region": "China",
+          "type": "Soup",
+          "preview": "Hot and sour soup is a Chinese soup made with mushrooms, tofu, bamboo shoots, and egg, flavored with vinegar and white p"
+        },
+        {
+          "id": "28",
+          "score": 0.6814,
+          "region": "Indonesia",
+          "type": "Main Course",
+          "preview": "Nasi Goreng is Indonesian-style fried rice often cooked with kecap manis, garlic, shallots, and chili."
+        },
+        {
+          "id": "63",
+          "score": 0.6757,
+          "region": "Japan",
+          "type": "Main Course",
+          "preview": "Tempura is a Japanese dish of seafood or vegetables that have been battered and deep-fried."
+        }
+      ],
+      "answer": "To make a low-sodium tofu stir-fry, you can start by using low-sodium seasonings and marinades. You can stir-fry extra-firm or firm tofu with vegetables and spices. A good option would be using Sichuan peppercorns for flavor without adding extra sodium."
+    },
+    {
+      "query": "pescatarian meals rich in protein",
+      "embed_ms": 33.62,
+      "vector_ms": 227.85,
+      "llm_ms": 399.28,
+      "total_ms": 666.21,
+      "top": [
+        {
+          "id": "50",
+          "score": 0.7105,
+          "region": "Australia",
+          "type": "Snack",
+          "preview": "Meat pie is an iconic Australian dish consisting of a flaky pastry filled with minced meat and gravy."
+        },
+        {
+          "id": "86",
+          "score": 0.7056,
+          "region": "",
+          "type": "",
+          "preview": "Congee with Century Egg and Pork is a comforting rice porridge with rich flavor."
+        },
+        {
+          "id": "69",
+          "score": 0.6732,
+          "region": "Middle East",
+          "type": "Salad",
+          "preview": "Tabbouleh is a Levantine vegetarian salad made of finely chopped parsley, tomatoes, mint, and bulgur."
+        },
+        {
+          "id": "84",
+          "score": 0.6703,
+          "region": "",
+          "type": "",
+          "preview": "Hot Pot is a communal meal where diners cook meats and vegetables in broth."
+        },
+        {
+          "id": "67",
+          "score": 0.6654,
+          "region": "Middle East",
+          "type": "Main Course",
+          "preview": "Falafel consists of deep-fried balls of ground chickpeas or fava beans, typically served in pita bread."
+        }
+      ],
+      "answer": "The information provided doesn't explicitly mention pescatarian meals. To answer your question, we are missing information about dishes rich in protein and related to seafood (which would be typical in pescatarian diets)."
+    },
+    {
+      "query": "non-vegetarian Moroccan main course with fruit",
+      "embed_ms": 18.76,
+      "vector_ms": 228.11,
+      "llm_ms": 283.27,
+      "total_ms": 539.01,
+      "top": [
+        {
+          "id": "81",
+          "score": 0.6725,
+          "region": "",
+          "type": "",
+          "preview": "Sweet and Sour Pork combines crispy pork with tangy sauce and pineapple."
+        },
+        {
+          "id": "47",
+          "score": 0.6598,
+          "region": "Hong Kong",
+          "type": "Main Course",
+          "preview": "Char siu is a Cantonese-style barbecued pork known for its sweet and savory glaze."
+        },
+        {
+          "id": "76",
+          "score": 0.6521,
+          "region": "",
+          "type": "",
+          "preview": "Char Siu is a traditional Cantonese roasted pork dish with honey and soy glaze."
+        },
+        {
+          "id": "50",
+          "score": 0.6456,
+          "region": "Australia",
+          "type": "Snack",
+          "preview": "Meat pie is an iconic Australian dish consisting of a flaky pastry filled with minced meat and gravy."
+        },
+        {
+          "id": "23",
+          "score": 0.643,
+          "region": "Pakistan",
+          "type": "Main Course",
+          "preview": "Nihari is a slow-cooked stew of beef or lamb, eaten as breakfast in Pakistan."
+        }
+      ],
+      "answer": "There's no information about Moroccan cuisine in the provided context."
+    },
+    {
+      "query": "high-protein low-carb foods",
+      "embed_ms": 28.67,
+      "vector_ms": 227.32,
+      "llm_ms": 424.49,
+      "total_ms": 685.88,
+      "top": [
+        {
+          "id": "69",
+          "score": 0.6631,
+          "region": "Middle East",
+          "type": "Salad",
+          "preview": "Tabbouleh is a Levantine vegetarian salad made of finely chopped parsley, tomatoes, mint, and bulgur."
+        },
+        {
+          "id": "50",
+          "score": 0.6605,
+          "region": "Australia",
+          "type": "Snack",
+          "preview": "Meat pie is an iconic Australian dish consisting of a flaky pastry filled with minced meat and gravy."
+        },
+        {
+          "id": "67",
+          "score": 0.6554,
+          "region": "Middle East",
+          "type": "Main Course",
+          "preview": "Falafel consists of deep-fried balls of ground chickpeas or fava beans, typically served in pita bread."
+        },
+        {
+          "id": "86",
+          "score": 0.6515,
+          "region": "",
+          "type": "",
+          "preview": "Congee with Century Egg and Pork is a comforting rice porridge with rich flavor."
+        },
+        {
+          "id": "87",
+          "score": 0.6501,
+          "region": "",
+          "type": "",
+          "preview": "Stir-Fried Bok Choy with Garlic is a simple, light, and healthy vegetable dish."
+        }
+      ],
+      "answer": "Based on the provided context, high-protein, low-carb foods mentioned are:\n\n- Falafel (consists of ground chickpeas or fava beans).\n- Meat pie (filled with minced meat).\n\nThese options fit the criteria, but there may be other possibilities not mentioned in the provided context."
+    },
+    {
+      "query": "omega-3 rich dishes",
+      "embed_ms": 46.03,
+      "vector_ms": 227.51,
+      "llm_ms": 316.56,
+      "total_ms": 598.11,
+      "top": [
+        {
+          "id": "85",
+          "score": 0.6939,
+          "region": "",
+          "type": "",
+          "preview": "Steamed Fish with Soy Sauce highlights the freshness of fish with light seasoning."
+        },
+        {
+          "id": "55",
+          "score": 0.6908,
+          "region": "Samoa, South Pacific",
+          "type": "Appetizer",
+          "preview": "Oka is a Samoan raw fish salad marinated in citrus and coconut milk, similar to ceviche."
+        },
+        {
+          "id": "38",
+          "score": 0.6894,
+          "region": "China",
+          "type": "Soup",
+          "preview": "Hot and sour soup is a Chinese soup made with mushrooms, tofu, bamboo shoots, and egg, flavored with vinegar and white p"
+        },
+        {
+          "id": "63",
+          "score": 0.6809,
+          "region": "Japan",
+          "type": "Main Course",
+          "preview": "Tempura is a Japanese dish of seafood or vegetables that have been battered and deep-fried."
+        },
+        {
+          "id": "82",
+          "score": 0.674,
+          "region": "",
+          "type": "",
+          "preview": "Xiaolongbao are steamed soup dumplings filled with pork and rich broth."
+        }
+      ],
+      "answer": "Based on the context, two omega-3 rich dishes are Steamed Fish with Soy Sauce and Oka, a Samoan raw fish salad."
+    },
+    {
+      "query": "low-calorie breakfast high fiber",
+      "embed_ms": 19.27,
+      "vector_ms": 227.53,
+      "llm_ms": 364.14,
+      "total_ms": 616.65,
+      "top": [
+        {
+          "id": "86",
+          "score": 0.6377,
+          "region": "",
+          "type": "",
+          "preview": "Congee with Century Egg and Pork is a comforting rice porridge with rich flavor."
+        },
+        {
+          "id": "87",
+          "score": 0.6326,
+          "region": "",
+          "type": "",
+          "preview": "Stir-Fried Bok Choy with Garlic is a simple, light, and healthy vegetable dish."
+        },
+        {
+          "id": "67",
+          "score": 0.6279,
+          "region": "Middle East",
+          "type": "Main Course",
+          "preview": "Falafel consists of deep-fried balls of ground chickpeas or fava beans, typically served in pita bread."
+        },
+        {
+          "id": "33",
+          "score": 0.6235,
+          "region": "China",
+          "type": "Main Course",
+          "preview": "Peking duck is a famous Beijing dish featuring crispy roasted duck served with pancakes, hoisin sauce, and scallions."
+        },
+        {
+          "id": "83",
+          "score": 0.6164,
+          "region": "",
+          "type": "",
+          "preview": "Yangzhou Fried Rice mixes ham, shrimp, egg, and vegetables for color and flavor."
+        }
+      ],
+      "answer": "Unfortunately, the context provided doesn't directly suggest a low-calorie breakfast with high fiber. However, based on the given information, \"Stir-Fried Bok Choy with Garlic\" seems to be a light and healthy vegetable dish, suggesting it might be a good fit for a breakfast option that is high in fiber."
+    },
+    {
+      "query": "traditional comfort foods",
+      "embed_ms": 62.42,
+      "vector_ms": 227.91,
+      "llm_ms": 349.37,
+      "total_ms": 644.91,
+      "top": [
+        {
+          "id": "86",
+          "score": 0.6969,
+          "region": "",
+          "type": "",
+          "preview": "Congee with Century Egg and Pork is a comforting rice porridge with rich flavor."
+        },
+        {
+          "id": "28",
+          "score": 0.6888,
+          "region": "Indonesia",
+          "type": "Main Course",
+          "preview": "Nasi Goreng is Indonesian-style fried rice often cooked with kecap manis, garlic, shallots, and chili."
+        },
+        {
+          "id": "82",
+          "score": 0.6817,
+          "region": "",
+          "type": "",
+          "preview": "Xiaolongbao are steamed soup dumplings filled with pork and rich broth."
+        },
+        {
+          "id": "54",
+          "score": 0.6809,
+          "region": "Samoa, South Pacific",
+          "type": "Main Course",
+          "preview": "Palusami is a Polynesian dish of taro leaves filled with coconut cream and sometimes meat, baked in banana leaves."
+        },
+        {
+          "id": "50",
+          "score": 0.6756,
+          "region": "Australia",
+          "type": "Snack",
+          "preview": "Meat pie is an iconic Australian dish consisting of a flaky pastry filled with minced meat and gravy."
+        }
+      ],
+      "answer": "The traditional comfort foods mentioned in the context are Congee with Century Egg and Pork, Xiaolongbao, and Meat pie. These dishes are often associated with warm and comforting feelings due to their rich flavors and nourishing ingredients."
+    },
+    {
+      "query": "festival foods from China",
+      "embed_ms": 8.37,
+      "vector_ms": 227.68,
+      "llm_ms": 377.32,
+      "total_ms": 622.96,
+      "top": [
+        {
+          "id": "83",
+          "score": 0.7822,
+          "region": "",
+          "type": "",
+          "preview": "Yangzhou Fried Rice mixes ham, shrimp, egg, and vegetables for color and flavor."
+        },
+        {
+          "id": "89",
+          "score": 0.7566,
+          "region": "",
+          "type": "",
+          "preview": "Zongzi are sticky rice dumplings wrapped in bamboo leaves for Dragon Boat Festival."
+        },
+        {
+          "id": "36",
+          "score": 0.7528,
+          "region": "Shanghai",
+          "type": "Snack",
+          "preview": "Xiao long bao are Chinese soup dumplings filled with meat and hot broth, typically served in a bamboo steamer."
+        },
+        {
+          "id": "40",
+          "score": 0.735,
+          "region": "China",
+          "type": "Dessert",
+          "preview": "Mooncake is a traditional Chinese pastry filled with lotus seed paste or red bean, eaten during the Mid-Autumn Festival."
+        },
+        {
+          "id": "80",
+          "score": 0.7297,
+          "region": "",
+          "type": "",
+          "preview": "Peking Duck is a famous Beijing dish with crispy skin and tender meat."
+        }
+      ],
+      "answer": "The festival foods mentioned from China are:\n\n- Zongzi, sticky rice dumplings eaten during the Dragon Boat Festival.\n- Mooncake, a traditional pastry filled with lotus seed paste or red bean, eaten during the Mid-Autumn Festival.\n- Peking Duck has no specific festival, but it's a popular dish in China, especially at other times."
+    },
+    {
+      "query": "Ethiopian holiday dishes",
+      "embed_ms": 55.94,
+      "vector_ms": 228.46,
+      "llm_ms": 272.86,
+      "total_ms": 562.36,
+      "top": [
+        {
+          "id": "22",
+          "score": 0.7153,
+          "region": "Bangladesh",
+          "type": "Main Course",
+          "preview": "Bhuna khichuri is a spiced rice and lentil dish often served with beef curry in Bangladesh."
+        },
+        {
+          "id": "16",
+          "score": 0.7152,
+          "region": "Gujarat",
+          "type": "Snack",
+          "preview": "Dhokla is a soft and fluffy savory cake made from fermented rice and chickpea flour."
+        },
+        {
+          "id": "56",
+          "score": 0.6964,
+          "region": "Fiji, South Pacific",
+          "type": "Main Course",
+          "preview": "Lovo is a Fijian feast where food is wrapped in banana leaves and cooked in an earth oven."
+        },
+        {
+          "id": "89",
+          "score": 0.6855,
+          "region": "",
+          "type": "",
+          "preview": "Zongzi are sticky rice dumplings wrapped in bamboo leaves for Dragon Boat Festival."
+        },
+        {
+          "id": "10",
+          "score": 0.6848,
+          "region": "Bengal",
+          "type": "Dessert",
+          "preview": "Rasgulla is a spongy dessert made from ball-shaped dumplings of chhena cooked in light syrup."
+        }
+      ],
+      "answer": "Information about Ethiopian holiday dishes is missing from the provided context."
+    },
+    {
+      "query": "dishes that can be grilled",
+      "embed_ms": 62.19,
+      "vector_ms": 227.4,
+      "llm_ms": 399.45,
+      "total_ms": 694.62,
+      "top": [
+        {
+          "id": "84",
+          "score": 0.7065,
+          "region": "",
+          "type": "",
+          "preview": "Hot Pot is a communal meal where diners cook meats and vegetables in broth."
+        },
+        {
+          "id": "63",
+          "score": 0.6959,
+          "region": "Japan",
+          "type": "Main Course",
+          "preview": "Tempura is a Japanese dish of seafood or vegetables that have been battered and deep-fried."
+        },
+        {
+          "id": "47",
+          "score": 0.6904,
+          "region": "Hong Kong",
+          "type": "Main Course",
+          "preview": "Char siu is a Cantonese-style barbecued pork known for its sweet and savory glaze."
+        },
+        {
+          "id": "50",
+          "score": 0.6851,
+          "region": "Australia",
+          "type": "Snack",
+          "preview": "Meat pie is an iconic Australian dish consisting of a flaky pastry filled with minced meat and gravy."
+        },
+        {
+          "id": "72",
+          "score": 0.6683,
+          "region": "Mongolia",
+          "type": "Main Course",
+          "preview": "Khorkhog is a Mongolian barbecue dish where meat is cooked with hot stones inside a sealed container."
+        }
+      ],
+      "answer": "Char siu can be cooked by grilling, but it's also often barbecued in a pan or oven. Khorkhog involves cooking meat over hot stones, which implies grilling or direct heat cooking."
+    },
+    {
+      "query": "slow-cooked stews",
+      "embed_ms": 42.03,
+      "vector_ms": 227.73,
+      "llm_ms": 281.82,
+      "total_ms": 559.57,
+      "top": [
+        {
+          "id": "84",
+          "score": 0.7394,
+          "region": "",
+          "type": "",
+          "preview": "Hot Pot is a communal meal where diners cook meats and vegetables in broth."
+        },
+        {
+          "id": "23",
+          "score": 0.7264,
+          "region": "Pakistan",
+          "type": "Main Course",
+          "preview": "Nihari is a slow-cooked stew of beef or lamb, eaten as breakfast in Pakistan."
+        },
+        {
+          "id": "38",
+          "score": 0.7128,
+          "region": "China",
+          "type": "Soup",
+          "preview": "Hot and sour soup is a Chinese soup made with mushrooms, tofu, bamboo shoots, and egg, flavored with vinegar and white p"
+        },
+        {
+          "id": "90",
+          "score": 0.6858,
+          "region": "",
+          "type": "",
+          "preview": "Beef Chow Fun is a Cantonese stir-fried noodle dish with beef and bean sprouts."
+        },
+        {
+          "id": "82",
+          "score": 0.6804,
+          "region": "",
+          "type": "",
+          "preview": "Xiaolongbao are steamed soup dumplings filled with pork and rich broth."
+        }
+      ],
+      "answer": "Nihari is a slow-cooked stew of beef or lamb in Pakistan."
+    },
+    {
+      "query": "baked casseroles",
+      "embed_ms": 38.83,
+      "vector_ms": 227.99,
+      "llm_ms": 277.53,
+      "total_ms": 549.43,
+      "top": [
+        {
+          "id": "11",
+          "score": 0.6919,
+          "region": "North India",
+          "type": "Bread",
+          "preview": "Naan is a soft and fluffy flatbread that is traditionally baked in a tandoor."
+        },
+        {
+          "id": "12",
+          "score": 0.6916,
+          "region": "Punjab",
+          "type": "Main Course",
+          "preview": "Tandoori chicken is chicken marinated in yogurt and spices, roasted in a tandoor."
+        },
+        {
+          "id": "88",
+          "score": 0.6826,
+          "region": "",
+          "type": "",
+          "preview": "Mooncakes are traditional pastries eaten during the Mid-Autumn Festival."
+        },
+        {
+          "id": "48",
+          "score": 0.6815,
+          "region": "Hong Kong",
+          "type": "Dessert",
+          "preview": "Egg tarts are a popular Hong Kong dessert consisting of a flaky pastry crust filled with egg custard."
+        },
+        {
+          "id": "86",
+          "score": 0.6797,
+          "region": "",
+          "type": "",
+          "preview": "Congee with Century Egg and Pork is a comforting rice porridge with rich flavor."
+        }
+      ],
+      "answer": "There is no information provided about baked casseroles."
+    }
+  ]
+}

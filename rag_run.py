@@ -1,104 +1,171 @@
 import os
 import json
-import chromadb
-import requests
+import numpy as np
+from dotenv import load_dotenv
+from upstash_vector import Index
+from openai import OpenAI
+from groq import Groq
+from sentence_transformers import SentenceTransformer
 
-# Constants
-CHROMA_DIR = "chroma_db"
-COLLECTION_NAME = "foods"
-JSON_FILE = "foods.json"
-EMBED_MODEL = "mxbai-embed-large"
-LLM_MODEL = "llama3.2"
+# =============================
+# 0. 环境变量加载
+# =============================
+load_dotenv()
+print("✅ Environment variables loaded.")
 
-# Load data
-with open(JSON_FILE, "r", encoding="utf-8") as f:
-    food_data = json.load(f)
+# 初始化客户端
+openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+groq_client = Groq(api_key=os.getenv("GROQ_API_KEY", ""))
+index = Index(
+    url=os.getenv("UPSTASH_VECTOR_REST_URL"),
+    token=os.getenv("UPSTASH_VECTOR_REST_TOKEN")
+)
+print("✅ Connected to Upstash Vector index initialized.")
 
-# Setup ChromaDB
-chroma_client = chromadb.PersistentClient(path=CHROMA_DIR)
-collection = chroma_client.get_or_create_collection(name=COLLECTION_NAME)
+# =============================
+# 1. 本地 SentenceTransformer 向量模型
+# =============================
+model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# Ollama embedding function
-def get_embedding(text):
-    response = requests.post("http://localhost:11434/api/embeddings", json={
-        "model": EMBED_MODEL,
-        "prompt": text
-    })
-    return response.json()["embedding"]
+def create_embedding(text: str):
+    """生成 384维嵌入并补齐到 1024维"""
+    emb = model.encode(text)
+    padded = np.pad(emb, (0, 1024 - len(emb)), 'constant')
+    return padded.tolist()
 
-# Add only new items
-existing_ids = set(collection.get()['ids'])
-new_items = [item for item in food_data if item['id'] not in existing_ids]
+# =============================
+# 2. 上传数据
+# =============================
+def upload_food_data():
+    file_path = "foods.json"
+    if not os.path.exists(file_path):
+        print("❌ foods.json not found.")
+        return
 
-if new_items:
-    print(f"🆕 Adding {len(new_items)} new documents to Chroma...")
-    for item in new_items:
-        # Enhance text with region/type
-        enriched_text = item["text"]
-        if "region" in item:
-            enriched_text += f" This food is popular in {item['region']}."
-        if "type" in item:
-            enriched_text += f" It is a type of {item['type']}."
+    with open(file_path, "r", encoding="utf-8") as f:
+        foods = json.load(f)
 
-        emb = get_embedding(enriched_text)
+    print(f"⬆️ Uploading {len(foods)} food items to Upstash Vector...")
 
-        collection.add(
-            documents=[item["text"]],  # Use original text as retrievable context
-            embeddings=[emb],
-            ids=[item["id"]]
+    for item in foods:
+        try:
+            text = item["text"]
+            vector = create_embedding(text)
+            index.upsert(vectors=[{
+                "id": str(item["id"]),
+                "vector": vector,
+                "metadata": {
+                    "text": text,  # ⭐ 保存完整文本描述
+                    "region": item.get("region", ""),
+                    "type": item.get("type", ""),
+                    "name": item.get("name", ""),
+                    "source": "foods.json"
+                }
+            }])
+            print(f"✅ Uploaded: {item['id']}")
+        except Exception as e:
+            print(f"⚠️ Upload failed: {item['id']} - {e}")
+
+    print("✅ Upload completed.")
+
+# =============================
+# 3. 查询 Upstash
+# =============================
+def query_upstash(query_text, top_k=5, threshold=0.1):
+    """查询最相似的向量"""
+    query_vector = create_embedding(query_text)
+
+    try:
+        results = index.query(
+            vector=query_vector,
+            top_k=top_k,
+            include_metadata=True,
+            include_vectors=False
         )
-else:
-    print("✅ All documents already in ChromaDB.")
+    except Exception as e:
+        print("❌ Query failed:", e)
+        return []
 
-# RAG query
-def rag_query(question):
-    # Step 1: Embed the user question
-    q_emb = get_embedding(question)
+    # 统一兼容返回结构
+    matches = []
+    if isinstance(results, list):
+        # Upstash 直接返回列表
+        matches = results
+    elif isinstance(results, dict):
+        matches = results.get("matches", [])
+    elif hasattr(results, "matches"):
+        matches = results.matches
 
-    # Step 2: Query the vector DB
-    results = collection.query(query_embeddings=[q_emb], n_results=3)
+    if not matches:
+        print("⚠️ No relevant context found (empty).")
+        return []
 
-    # Step 3: Extract documents
-    top_docs = results['documents'][0]
-    top_ids = results['ids'][0]
+    # 打印调试信息
+    print(f"\n🔍 Found {len(matches)} results:")
+    for m in matches:
+        score = getattr(m, "score", 0)
+        print(f"  ID: {m.id}, Score: {score:.4f}")
 
-    # Step 4: Show friendly explanation of retrieved documents
-    print("\n🧠 Retrieving relevant information to reason through your question...\n")
+    # 过滤相似度低的项
+    valid = [m for m in matches if getattr(m, "score", 0) > threshold]
+    if not valid:
+        print(f"⚠️ No relevant context found (all scores below threshold {threshold}).")
+        return []
 
-    for i, doc in enumerate(top_docs):
-        print(f"🔹 Source {i + 1} (ID: {top_ids[i]}):")
-        print(f"    \"{doc}\"\n")
+    return valid
 
-    print("📚 These seem to be the most relevant pieces of information to answer your question.\n")
-
-    # Step 5: Build prompt from context
-    context = "\n".join(top_docs)
-
-    prompt = f"""Use the following context to answer the question.
+# =============================
+# 4. Groq 问答
+# =============================
+def ask_groq(question, context):
+    """把上下文 + 问题交给 Groq 模型"""
+    prompt = f"""
+You are a food expert AI. Use only the provided context to answer.
 
 Context:
 {context}
 
 Question: {question}
-Answer:"""
+Answer:
+"""
+    try:
+        resp = groq_client.chat.completions.create(
+            model="llama-3.1-8b-instant",
+            messages=[{"role": "user", "content": prompt}]
+        )
+        return resp.choices[0].message.content.strip()
+    except Exception as e:
+        return f"⚠️ Groq error: {e}"
 
-    # Step 6: Generate answer with Ollama
-    response = requests.post("http://localhost:11434/api/generate", json={
-        "model": LLM_MODEL,
-        "prompt": prompt,
-        "stream": False
-    })
+# =============================
+# 5. 主循环
+# =============================
+if __name__ == "__main__":
+    print("🤖 RAG is ready. Ask a question (type 'exit' to quit):")
+    upload_choice = input("Upload foods.json to Upstash? (y/n): ").strip().lower()
+    if upload_choice == "y":
+        upload_food_data()
 
-    # Step 7: Return final result
-    return response.json()["response"].strip()
+    while True:
+        question = input("\nYou: ").strip()
+        if question.lower() == "exit":
+            print("👋 Goodbye!")
+            break
 
+        results = query_upstash(question)
+        if not results:
+            continue
 
-# Interactive loop
-print("\n🧠 RAG is ready. Ask a question (type 'exit' to quit):\n")
-while True:
-    question = input("You: ")
-    if question.lower() in ["exit", "quit"]:
-        print("👋 Goodbye!")
-        break
-    answer = rag_query(question)
-    print("🤖:", answer)
+        # 拼接上下文 - 直接从查询结果的metadata获取
+        context_items = []
+        for r in results:
+            text = r.metadata.get('text', 'No description available')
+            region = r.metadata.get('region', 'Unknown')
+            food_type = r.metadata.get('type', 'Unknown')
+            context_items.append(f"[{region} - {food_type}] {text}")
+        
+        context = "\n".join(context_items)
+        print("\n🧠 Retrieved context:\n", context)
+
+        answer = ask_groq(question, context)
+        print("\n💬 Groq Answer:\n", answer)
